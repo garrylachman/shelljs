@@ -21,9 +21,34 @@ var common = require('./src/common');
 //@commands
 
 // Load all default commands
-require('./commands').forEach(function (command) {
-  require('./src/' + command);
-});
+// Enclose & nexe not support dynamic require
+require('./src/cat');
+require('./src/cd');
+require('./src/chmod');
+require('./src/cp');
+require('./src/dirs');
+require('./src/echo');
+require('./src/exec');
+require('./src/find');
+require('./src/grep');
+require('./src/head');
+require('./src/ln');
+require('./src/ls');
+require('./src/mkdir');
+require('./src/mv');
+require('./src/pwd');
+require('./src/rm');
+require('./src/sed');
+require('./src/set');
+require('./src/sort');
+require('./src/tail');
+require('./src/tempdir');
+require('./src/test');
+require('./src/to');
+require('./src/toEnd');
+require('./src/touch');
+require('./src/uniq');
+require('./src/which');
 
 //@
 //@ ### exit(code)
